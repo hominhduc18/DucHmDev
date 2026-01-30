@@ -405,28 +405,57 @@ section {
 /* Workflow Steps */
 .workflow-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    position: relative;
 }
 
 .flow-step {
     position: relative;
-    padding: 2.5rem;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
 }
 
 .step-num {
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    font-size: 3rem;
-    font-weight: 900;
-    opacity: 0.1;
-    color: var(--primary);
+    width: 50px;
+    height: 50px;
+    background: var(--accent-gradient);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-weight: 800;
+    font-size: 1.2rem;
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.2);
 }
 
 .flow-step h3 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.flow-step p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* Services Budget Tip */
+.services-tip {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 1rem 2rem;
+    background: var(--primary-glow);
+    border-radius: 12px;
+    display: inline-block;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    font-weight: 600;
+    color: var(--primary);
+    border: 1px dashed var(--primary);
 }
 
 /* Services */

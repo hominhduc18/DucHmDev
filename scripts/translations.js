@@ -33,16 +33,16 @@ const translations = {
 
         // Workflow
         flow_title: "My Working Process",
-        flow_step1_t: "Requirements Gathering",
-        flow_step1_d: "Understanding your business goals and specific technical needs.",
-        flow_step2_t: "Analysis & Solution",
-        flow_step2_d: "Proposing the most efficient architecture and tech stack.",
-        flow_step3_t: "Development",
-        flow_step3_d: "Agile development with regular updates and clean code standards.",
-        flow_step4_t: "Testing",
-        flow_step4_d: "Rigorous quality assurance and security vulnerability checks.",
-        flow_step5_t: "Delivery & Support",
-        flow_step5_d: "System deployment and long-term maintenance support.",
+        flow_step1_t: "Analysis",
+        flow_step1_d: "Requirements analysis & consulting.",
+        flow_step2_t: "Proposals",
+        flow_step2_d: "Technical solution proposals.",
+        flow_step3_t: "Dev & Test",
+        flow_step3_d: "Coding & rigorous testing.",
+        flow_step4_t: "Delivery",
+        flow_step4_d: "System deployment & handover.",
+        flow_step5_t: "Support",
+        flow_step5_d: "Maintenance & long-term upgrades.",
 
         // Trust Metrics
         trust_projects: "25+",
@@ -56,14 +56,17 @@ const translations = {
 
         // Services
         services_title: "Services I Offer",
+        service_budget: "Budget-friendly solutions – prioritizing long-term stability & scalability.",
         service1_t: "Enterprise Website",
-        service1_d: "Professional and high-converting websites for businesses.",
-        service2_t: "Custom Web Apps",
-        service2_d: "Tailor-made management software and internal tools.",
-        service3_t: "API & Backend",
-        service3_d: "Scalable server-side architecture and integration services.",
-        service4_t: "Maintenance",
+        service1_d: "Professional and high-converting modern websites.",
+        service2_t: "Management Software",
+        service2_d: "Custom Web Apps and internal management systems.",
+        service3_t: "Backend & API",
+        service3_d: "Scalable server architecture and API integrations.",
+        service4_t: "System Maintenance",
         service4_d: "Upgrading, debugging, and optimizing existing systems.",
+        service5_t: "Technical Consulting",
+        service5_d: "Professional advice on architecture and technology stack.",
 
         // Projects
         proj_problem: "Problem:",
@@ -122,16 +125,16 @@ const translations = {
 
         // Workflow
         flow_title: "Quy trình làm việc",
-        flow_step1_t: "Thu thập yêu cầu",
-        flow_step1_d: "Tìm hiểu mục tiêu kinh doanh và nhu cầu kỹ thuật cụ thể của bạn.",
-        flow_step2_t: "Phân tích & Đề xuất",
-        flow_step2_d: "Đề xuất kiến trúc và công nghệ tối ưu, tiết kiệm chi phí nhất.",
-        flow_step3_t: "Phát triển",
-        flow_step3_d: "Lập trình theo mô hình Agile, cập nhật tiến độ thường xuyên.",
-        flow_step4_t: "Kiểm thử",
-        flow_step4_d: "Đảm bảo chất lượng nghiêm ngặt và kiểm tra lỗ hổng bảo mật.",
-        flow_step5_t: "Bàn giao & Hỗ trợ",
-        flow_step5_d: "Triển khai hệ thống và hỗ trợ bảo trì, nâng cấp dài hạn.",
+        flow_step1_t: "Nhận yêu cầu & Phân tích",
+        flow_step1_d: "Tư vấn & làm rõ nhu cầu thực tế của khách hàng.",
+        flow_step2_t: "Đề xuất kỹ thuật",
+        flow_step2_d: "Đưa ra giải pháp kiến trúc và công nghệ tối ưu.",
+        flow_step3_t: "Phát triển & Test",
+        flow_step3_d: "Lập trình & kiểm thử nghiêm ngặt chất lượng sản phẩm.",
+        flow_step4_t: "Bàn giao",
+        flow_step4_d: "Triển khai hệ thống và hướng dẫn sử dụng chi tiết.",
+        flow_step5_t: "Bảo trì & Nâng cấp",
+        flow_step5_d: "Hỗ trợ kỹ thuật và mở rộng tính năng lâu dài.",
 
         // Trust Metrics
         trust_projects: "25+",
@@ -145,14 +148,17 @@ const translations = {
 
         // Services
         services_title: "Dịch vụ cung cấp",
+        service_budget: "Giải pháp phù hợp ngân sách – ưu tiên tính ổn định & lâu dài.",
         service1_t: "Website Doanh nghiệp",
         service1_d: "Website chuyên nghiệp, chuẩn SEO, giúp tăng tỷ lệ chuyển đổi.",
         service2_t: "Web App / Quản lý",
         service2_d: "Phần mềm quản lý nội bộ, công cụ đặc thù theo yêu cầu.",
-        service3_t: "API & Backend",
+        service3_t: "Backend & API",
         service3_d: "Xây dựng hệ thống máy chủ ổn định, khả năng mở rộng cao.",
-        service4_t: "Bảo trì & Nâng cấp",
-        service4_d: "Sửa lỗi, tối ưu tốc độ và nâng cấp tính năng cho hệ thống cũ.",
+        service4_t: "Bảo trì hệ thống",
+        service4_d: "Sửa lỗi, tối ưu tốc độ và nâng cấp tính năng cho hệ thống.",
+        service5_t: "Tư vấn kỹ thuật",
+        service5_d: "Tư vấn lộ trình và giải pháp công nghệ cho dự án mới.",
 
         // Projects
         proj_problem: "Vấn đề:",
