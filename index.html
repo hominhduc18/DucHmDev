@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duc Hm | Software Engineer Portfolio</title>
+    <title>Duc Hm | Professional Software Engineer Portfolio</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <!-- Animated Background Blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container nav-container">
+        <div class="nav-container container">
             <a href="#" class="logo">Duc<span>Hm</span></a>
             
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link active" data-t="nav_home">Home</a></li>
                 <li><a href="#about" class="nav-link" data-t="nav_about">About</a></li>
-                <li><a href="#experience" class="nav-link" data-t="nav_experience">Experience</a></li>
                 <li><a href="#projects" class="nav-link" data-t="nav_projects">Projects</a></li>
+                <li><a href="#services" class="nav-link" data-t="nav_services">Services</a></li>
                 <li><a href="#contact" class="nav-link" data-t="nav_contact">Contact</a></li>
             </ul>
 
@@ -36,16 +43,19 @@
     <section class="hero" id="home">
         <div class="container hero-grid">
             <div class="hero-content reveal">
-                <span class="hero-tag" data-t="hero_role">Software Engineer</span>
-                <h1 class="hero-title">
-                    <span data-t="hero_hi">Hi, I'm</span><br>
-                    Duc Hm
+                <span class="hero-tag">
+                    <i class='bx bxs-circle' style='color: #22c55e; font-size: 0.6rem; margin-right: 5px;'></i>
+                    <span data-t="hero_tag">Available for Freelance</span>
+                </span>
+                <h1 class="hero-title" data-t="hero_title">
+                    Building <span>Efficient Systems</span> for Progressive Businesses
                 </h1>
                 <p class="hero-desc" data-t="hero_desc">
-                    Specializing in building exceptional digital experiences with modern technologies. Passionate about backend architecture and mobile development.
+                    I develop high-performance software and web systems that help businesses operate safely, scale effectively, and automate complex workflows.
                 </p>
                 <div class="hero-btns">
-                    <a href="#projects" class="btn btn-primary" data-t="hero_btn">View My Work</a>
+                    <a href="#contact" class="btn btn-primary" data-t="hero_cta_hire">Hire Me Now</a>
+                    <a href="#projects" class="btn glass-card" data-t="hero_cta_work" style="border: 1px solid var(--border)">View My Projects</a>
                 </div>
                 <div class="social-links">
                     <a href="#" class="social-link"><i class='bx bxl-github'></i></a>
@@ -62,49 +72,48 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About & Trust Metrics -->
     <section class="about" id="about">
         <div class="container">
             <div class="section-header reveal">
-                <h2 class="section-title" data-t="about_title">About Me</h2>
+                <h2 class="section-title" data-t="about_title">Personal Profile</h2>
                 <div class="underline"></div>
             </div>
-            <div class="about-grid reveal">
-                <div class="about-img">
-                    <img src="my_coding_1.png" alt="Duc Hm Coding">
-                </div>
-                <div class="about-text">
-                    <p data-t="about_p1">I am a dedicated Software Development Engineer based in Ho Chi Minh City. With a strong foundation in C#, .NET, and Android development, I bridge the gap between robust backend systems and intuitive mobile experiences.</p>
-                    <br>
-                    <p data-t="about_p2">I love solving complex problems and turning ideas into scalable, efficient code. When I'm not coding, you'll find me exploring new tech trends or contributing to open-source projects.</p>
+            <div class="glass-card reveal">
+                <div class="about-grid">
+                    <div class="about-img">
+                        <img src="my_coding_1.png" alt="Duc Hm Coding">
+                    </div>
+                    <div class="about-text">
+                        <p data-t="about_p1">I am a Software Development Engineer based in Ho Chi Minh City...</p>
+                        <br>
+                        <p data-t="about_p2">My core expertise lies in building robust backend architectures...</p>
+                        <div style="margin-top: 2rem;">
+                            <a href="#" class="btn btn-primary" style="padding: 0.6rem 1.5rem;">
+                                <i class='bx bx-download'></i> <span data-t="profile_cv">Download CV</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section class="experience" id="experience">
-        <div class="container">
-            <div class="section-header reveal">
-                <h2 class="section-title" data-t="experience_title">Experience</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="experience-timeline">
-                <div class="exp-item reveal">
-                    <div class="exp-dot"></div>
-                    <div class="exp-content">
-                        <h3 data-t="exp_role1">Software Engineer @ Tech Company A</h3>
-                        <span class="exp-date" data-t="exp_date1">2022 - Present</span>
-                        <p data-t="exp_desc1">Developing and maintaining large-scale backend architectures using .NET Core...</p>
-                    </div>
+            <!-- Trust Metrics -->
+            <div class="metrics-grid">
+                <div class="metric-item reveal">
+                    <span class="metric-value" data-t="trust_exp">4+</span>
+                    <span class="metric-label" data-t="trust_exp_label">Years Experience</span>
                 </div>
-                <div class="exp-item reveal">
-                    <div class="exp-dot"></div>
-                    <div class="exp-content">
-                        <h3 data-t="exp_role2">Android Developer @ Startup B</h3>
-                        <span class="exp-date" data-t="exp_date2">2020 - 2022</span>
-                        <p data-t="exp_desc2">Led the development of mobile applications for 50,000+ active users...</p>
-                    </div>
+                <div class="metric-item reveal">
+                    <span class="metric-value" data-t="trust_projects">25+</span>
+                    <span class="metric-label" data-t="trust_projects_label">Total Projects</span>
+                </div>
+                <div class="metric-item reveal">
+                    <span class="metric-value" data-t="trust_clients">15+</span>
+                    <span class="metric-label" data-t="trust_clients_label">Happy Clients</span>
+                </div>
+                <div class="metric-item reveal">
+                    <span class="metric-value" data-t="trust_deadline">100%</span>
+                    <span class="metric-label" data-t="trust_deadline_label">On-time Delivery</span>
                 </div>
             </div>
         </div>
@@ -114,33 +123,61 @@
     <section class="skills" id="skills">
         <div class="container">
             <div class="section-header reveal">
-                <h2 class="section-title" data-t="skills_title">Skills & Tech Stack</h2>
+                <h2 class="section-title" data-t="nav_skills">Technical Skills</h2>
                 <div class="underline"></div>
             </div>
             <div class="skills-grid">
-                <div class="skill-item reveal">
-                    <i class='bx bxl-visual-studio'></i>
-                    <h3>.NET / C#</h3>
+                <div class="skill-item glass-card reveal">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Frontend</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">HTML, CSS, JS, React, Next.js</p>
                 </div>
-                <div class="skill-item reveal">
-                    <i class='bx bxl-android'></i>
-                    <h3>Android</h3>
+                <div class="skill-item glass-card reveal">
+                    <i class='bx bx-server'></i>
+                    <h3>Backend</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">.NET Core, Node.js, REST API</p>
                 </div>
-                <div class="skill-item reveal">
-                    <i class='bx bxl-mongodb'></i>
-                    <h3>MongoDB</h3>
+                <div class="skill-item glass-card reveal">
+                    <i class='bx bx-data'></i>
+                    <h3>Database</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">SQL Server, MongoDB, PostgreSQL</p>
                 </div>
-                <div class="skill-item reveal">
-                    <i class='bx bxs-data'></i>
-                    <h3>SQL Server</h3>
+                <div class="skill-item glass-card reveal">
+                    <i class='bx bx-cloud'></i>
+                    <h3>DevOps</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Docker, Git, CI/CD, AWS</p>
                 </div>
-                <div class="skill-item reveal">
-                    <i class='bx bxl-java'></i>
-                    <h3>Kotlin</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section class="workflow" id="workflow">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title" data-t="flow_title">Working Process</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="workflow-grid">
+                <div class="flow-step glass-card reveal">
+                    <span class="step-num">01</span>
+                    <h3 data-t="flow_step1_t">Requirements</h3>
+                    <p data-t="flow_step1_d">Understanding goals...</p>
                 </div>
-                <div class="skill-item reveal">
-                    <i class='bx bxl-javascript'></i>
-                    <h3>Web Dev</h3>
+                <div class="flow-step glass-card reveal">
+                    <span class="step-num">02</span>
+                    <h3 data-t="flow_step2_t">Analysis</h3>
+                    <p data-t="flow_step2_d">Proposing tech stack...</p>
+                </div>
+                <div class="flow-step glass-card reveal">
+                    <span class="step-num">03</span>
+                    <h3 data-t="flow_step3_t">Development</h3>
+                    <p data-t="flow_step3_d">Agile coding...</p>
+                </div>
+                <div class="flow-step glass-card reveal">
+                    <span class="step-num">04</span>
+                    <h3 data-t="flow_step4_t">Testing</h3>
+                    <p data-t="flow_step4_d">QA & Security...</p>
                 </div>
             </div>
         </div>
@@ -150,51 +187,64 @@
     <section class="projects" id="projects">
         <div class="container">
             <div class="section-header reveal">
-                <h2 class="section-title" data-t="projects_title">Featured Projects</h2>
+                <h2 class="section-title" data-t="nav_projects">Featured Projects</h2>
                 <div class="underline"></div>
             </div>
             <div class="projects-grid">
                 <!-- Project 1 -->
-                <div class="project-card reveal">
+                <div class="project-card glass-card reveal">
                     <div class="project-img">
-                        <img src="my_coding_2.png" alt="Real Work" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="proj_hospital.png" alt="Hospital App" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
                     </div>
                     <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">ASP.NET Core</span>
-                            <span class="tag">SQL Server</span>
+                        <h3 data-t="proj1_title">Hospital Management Pro</h3>
+                        <div class="project-details">
+                            <div class="detail-item"><span class="detail-label" data-t="proj_problem">Problem:</span> <span data-t="proj1_problem">Paper-based records...</span></div>
+                            <div class="detail-item"><span class="detail-label" data-t="proj_solution">Solution:</span> <span data-t="proj1_solution">.NET Core system...</span></div>
+                            <div class="detail-item"><span class="detail-label" data-t="proj_result">Results:</span> <span data-t="proj1_result">Reduced wait time...</span></div>
                         </div>
-                        <h3 data-t="proj1_title">Hospital Management System</h3>
-                        <p data-t="proj1_desc">A comprehensive system for managing hospital operations, appointments, and patient records.</p>
                     </div>
                 </div>
                 <!-- Project 2 -->
-                <div class="project-card reveal">
+                <div class="project-card glass-card reveal">
                     <div class="project-img">
-                        <img src="20240803_112007 (1).jpg" alt="Work Photo 1" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="proj_fitness.png" alt="Fitness App" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
                     </div>
                     <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">Kotlin</span>
-                            <span class="tag">Firebase</span>
+                        <h3 data-t="proj2_title">Fitness Cloud App</h3>
+                        <div class="project-details">
+                            <div class="detail-item"><span class="detail-label" data-t="proj_problem">Problem:</span> <span data-t="proj2_problem">Remote tracking...</span></div>
+                            <div class="detail-item"><span class="detail-label" data-t="proj_solution">Solution:</span> <span data-t="proj2_solution">Kotlin & Firebase...</span></div>
+                            <div class="detail-item"><span class="detail-label" data-t="proj_result">Results:</span> <span data-t="proj2_result">10k users...</span></div>
                         </div>
-                        <h3 data-t="proj2_title">Fitness Tracker App</h3>
-                        <p data-t="proj2_desc">Modern Android application to track workouts, diet, and progress with real-time sync.</p>
                     </div>
                 </div>
-                <!-- Project 3 -->
-                <div class="project-card reveal">
-                    <div class="project-img">
-                        <img src="20240803_120645.jpg" alt="Work Photo 2" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                        </div>
-                        <h3 data-t="proj3_title">E-commerce Platform</h3>
-                        <p data-t="proj3_desc">High-performance online store with integrated payment gateways and admin dashboard.</p>
-                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title" data-t="services_title">Services I Offer</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card glass-card reveal">
+                    <i class='bx bx-desktop'></i>
+                    <h3 data-t="service1_t">Web Enterprise</h3>
+                    <p data-t="service1_d">Professional sites...</p>
+                </div>
+                <div class="service-card glass-card reveal">
+                    <i class='bx bx-layer'></i>
+                    <h3 data-t="service2_t">Web Apps</h3>
+                    <p data-t="service2_d">Management tools...</p>
+                </div>
+                <div class="service-card glass-card reveal">
+                    <i class='bx bx-cog'></i>
+                    <h3 data-t="service4_t">Maintenance</h3>
+                    <p data-t="service4_d">Support & Updates...</p>
                 </div>
             </div>
         </div>
@@ -207,24 +257,35 @@
                 <h2 class="section-title" data-t="contact_title">Get In Touch</h2>
                 <div class="underline"></div>
             </div>
-            <!-- Simple contact form concept -->
-             <div style="max-width: 600px; margin: 0 auto;" class="reveal">
+            <div class="glass-card reveal" style="max-width: 800px; margin: 0 auto;">
                 <form id="contact-form">
-                    <div style="display: grid; gap: 1rem;">
-                        <input type="text" data-t="contact_name" placeholder="Name" class="control-btn" style="width: 100%; text-align: left; padding-left: 1rem; height: 50px;">
-                        <input type="email" data-t="contact_email" placeholder="Email" class="control-btn" style="width: 100%; text-align: left; padding-left: 1rem; height: 50px;">
-                        <textarea data-t="contact_msg" placeholder="Message" class="control-btn" style="width: 100%; text-align: left; padding-left: 1rem; height: 150px; padding-top: 1rem;"></textarea>
+                    <div style="display: grid; gap: 1.5rem;">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <input type="text" data-t="contact_name" placeholder="Name" class="control-btn" style="width: 100%; text-align: left; padding: 1rem; border-radius: 12px;">
+                            <input type="email" data-t="contact_email" placeholder="Email" class="control-btn" style="width: 100%; text-align: left; padding: 1rem; border-radius: 12px;">
+                        </div>
+                        <textarea data-t="contact_msg" placeholder="Message" class="control-btn" style="width: 100%; text-align: left; padding: 1rem; border-radius: 12px; height: 150px;"></textarea>
                         <button type="submit" class="btn btn-primary" data-t="contact_send" style="justify-content: center;">Send Message</button>
                     </div>
                 </form>
-             </div>
+                <div class="contact-links">
+                    <div class="contact-link-item"><i class='bx bxl-whatsapp'></i> <span>0123 456 789</span></div>
+                    <div class="contact-link-item"><i class='bx bx-envelope'></i> <span>duc.hm@gmail.com</span></div>
+                    <div class="contact-link-item"><i class='bx bxl-linkedin-square'></i> <span>LinkedIn</span></div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer style="padding: 4rem 0; text-align: center; border-top: 1px solid var(--border);">
+    <footer style="padding: 4rem 0; text-align: center; border-top: 1px solid var(--border); margin-top: 4rem;">
         <div class="container">
-            <p data-t="footer_copy">© 2024 Duc Hm. All rights reserved.</p>
+            <div class="social-links" style="justify-content: center; margin-bottom: 2rem;">
+                <a href="#" class="social-link"><i class='bx bxl-github'></i></a>
+                <a href="#" class="social-link"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" class="social-link"><i class='bx bxl-facebook'></i></a>
+            </div>
+            <p data-t="footer_text">Built with Modern Tech Stack. © 2024 Duc Hm.</p>
         </div>
     </footer>
 
