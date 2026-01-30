@@ -1,148 +1,233 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duc Hm</title>
+    <title>Duc Hm | Software Engineer Portfolio</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href='https://unpkg.com/boxicons/css/boxicons.min.css' rel='stylesheet'>
-
-    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-
-
 </head>
-
 <body>
-    <header class="header">
-        <a href="#" class="logo">Duc Hm</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Duc<span>Hm</span></a>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active" data-t="nav_home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-t="nav_about">About</a></li>
+                <li><a href="#experience" class="nav-link" data-t="nav_experience">Experience</a></li>
+                <li><a href="#projects" class="nav-link" data-t="nav_projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-t="nav_contact">Contact</a></li>
+            </ul>
 
-        <nav class="navbar">
-            <a href="#home" style="--i:1;" class="active">Home</a>
-            <!-- <a href="#about" style="--i:2;">About</a>
-            <a href="#skills" style="--i:4;">Skills</a>
-            <a href="#project" style="--i:4;">Project</a>
-            <a href="#contact" style="--i:5;">contact</a> -->
-
-        </nav>
-    </header>
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hi everybody</h3>
-            <h3>I'm a <span class="text"></span></h3>
-            <p>
-                <br>I am a software development engineer currently living and working in Ho Chi Minh City.
-            </p>
-            <div class="home-sci">
-                <a href="#" style="--i:7;"><i class='bx bxl-facebook'></i></a>
-                <a href="#" style="--i:8;"><i class='bx bxl-linkedin'></i></a>
-                <!-- <a href="#" style="--i:9;"><i class='bx bxl-instagram'></i></a> -->
-                <a href="#" style="--i:10;"><i class='bx bxl-gmail'></i></a>
+            <div class="nav-actions">
+                <button class="control-btn lang-btn" id="lang-toggle">
+                    <span>EN</span>
+                </button>
+                <button class="control-btn" id="theme-toggle">
+                    <i class='bx bx-sun'></i>
+                </button>
             </div>
-            <a href="#" class="btn-box">More About Me</a>
         </div>
+    </nav>
 
-        <div class="home-image">
-            <img src="20240803_112007 (1).jpg" alt="A descriptive alt text">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <span class="hero-tag" data-t="hero_role">Software Engineer</span>
+                <h1 class="hero-title">
+                    <span data-t="hero_hi">Hi, I'm</span><br>
+                    Duc Hm
+                </h1>
+                <p class="hero-desc" data-t="hero_desc">
+                    Specializing in building exceptional digital experiences with modern technologies. Passionate about backend architecture and mobile development.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary" data-t="hero_btn">View My Work</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class='bx bxl-github'></i></a>
+                    <a href="#" class="social-link"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#" class="social-link"><i class='bx bxl-facebook'></i></a>
+                    <a href="mailto:duc@example.com" class="social-link"><i class='bx bx-envelope'></i></a>
+                </div>
+            </div>
+            <div class="hero-visual reveal">
+                <div class="hero-img-container">
+                    <img src="my_portrait.png" alt="Duc Hm">
+                </div>
+            </div>
         </div>
-    
-        <span class="home-imgHover"></span>
     </section>
-    
 
-  
-
-    <!-- <section class="experience-and-skills">
+    <!-- About Section -->
+    <section class="about" id="about">
         <div class="container">
-            <div class="work-experience">
-                <h1 class="sub-title">Work <span>Experience</span></h1>
-                <div class="services-list">
-                    <div>
-                        <i class='bx bx-code-alt' style='color:#00eeff'></i>
-                        <h2>Android Development</h2>
-                    </div>
-                    <div>
-                        <i class='bx bx-crop' style='color:#00eeff'></i>
-                        <h2>Backend Development</h2>
-                    </div>
+            <div class="section-header reveal">
+                <h2 class="section-title" data-t="about_title">About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-grid reveal">
+                <div class="about-img">
+                    <img src="my_coding_1.png" alt="Duc Hm Coding">
+                </div>
+                <div class="about-text">
+                    <p data-t="about_p1">I am a dedicated Software Development Engineer based in Ho Chi Minh City. With a strong foundation in C#, .NET, and Android development, I bridge the gap between robust backend systems and intuitive mobile experiences.</p>
+                    <br>
+                    <p data-t="about_p2">I love solving complex problems and turning ideas into scalable, efficient code. When I'm not coding, you'll find me exploring new tech trends or contributing to open-source projects.</p>
                 </div>
             </div>
-    
-            <div class="my-skills">
-                <h1 class="sub-title">My <span>Skills</span></h1>
-                <div class="container1" id="skills">
-                    <div class="Technical-bars">
-                        <div class="bar">
-                           
-                            <div class="info">
-                              
-                            </div>
-                        </div>
-                        <div class="bar">
-                            <img alt="image" src="https://th.bing.com/th/id/OIP.3eOHN6ihMc1uXilxB7ldUQHaDj?rs=1&pid=ImgDetMain" style="width: 50px;"/>
-                            <div class="info">
-                                <span>.NET</span>
-                            </div>
-                        </div>
-                        <div class="bar">
-                            <img alt="image" src="https://th.bing.com/th/id/OIP.weck8-JOccLMHDJ0PNnYPgHaHa?rs=1&pid=ImgDetMain" style="width: 30px;"/>
-                            <div class="info">
-                                <span>Kotlin</span>
-                            </div>
-                        </div>
-                        <div class="bar">
-                            <i class="bx bxl-android" style="color:#3ddc84"></i>
-                            <div class="info">
-                                <span>Android</span>
-                            </div>
-                        </div>
-                        <div class="bar">
-                          
-                            <div class="info">
-                              
-                            </div>
-                        </div>
-                        <div class="bar">
-                            <img alt="image" src="https://iconape.com/wp-content/files/sh/51404/png/c--4.png" style="width: 30px;"/>
-                            <div class="info">
-                                <span>C#</span>
-                            </div>
-                        </div>
-                        <div class="bar">
-                            <i class="bx bxl-mongodb" style="color:#4db33d"></i>
-                            <div class="info">
-                                <span>MongoDB</span>
-                            </div>
-                        </div>
-                        <div class="bar">
-                            <img alt="image" src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/221269925/original/c66e5832f12d7eeb6e00ff310dfbe3c37542b15b/install-microsoft-sql-server-in-windows-10-or-windows-server.jpg" style="width: 30px;"/>
-                            <div class="info">
-                                <span>SQL Server</span>
-                            </div>
-                        </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title" data-t="experience_title">Experience</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="experience-timeline">
+                <div class="exp-item reveal">
+                    <div class="exp-dot"></div>
+                    <div class="exp-content">
+                        <h3 data-t="exp_role1">Software Engineer @ Tech Company A</h3>
+                        <span class="exp-date" data-t="exp_date1">2022 - Present</span>
+                        <p data-t="exp_desc1">Developing and maintaining large-scale backend architectures using .NET Core...</p>
+                    </div>
+                </div>
+                <div class="exp-item reveal">
+                    <div class="exp-dot"></div>
+                    <div class="exp-content">
+                        <h3 data-t="exp_role2">Android Developer @ Startup B</h3>
+                        <span class="exp-date" data-t="exp_date2">2020 - 2022</span>
+                        <p data-t="exp_desc2">Led the development of mobile applications for 50,000+ active users...</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-     -->
-    
 
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title" data-t="skills_title">Skills & Tech Stack</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item reveal">
+                    <i class='bx bxl-visual-studio'></i>
+                    <h3>.NET / C#</h3>
+                </div>
+                <div class="skill-item reveal">
+                    <i class='bx bxl-android'></i>
+                    <h3>Android</h3>
+                </div>
+                <div class="skill-item reveal">
+                    <i class='bx bxl-mongodb'></i>
+                    <h3>MongoDB</h3>
+                </div>
+                <div class="skill-item reveal">
+                    <i class='bx bxs-data'></i>
+                    <h3>SQL Server</h3>
+                </div>
+                <div class="skill-item reveal">
+                    <i class='bx bxl-java'></i>
+                    <h3>Kotlin</h3>
+                </div>
+                <div class="skill-item reveal">
+                    <i class='bx bxl-javascript'></i>
+                    <h3>Web Dev</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title" data-t="projects_title">Featured Projects</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="my_coding_2.png" alt="Real Work" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">ASP.NET Core</span>
+                            <span class="tag">SQL Server</span>
+                        </div>
+                        <h3 data-t="proj1_title">Hospital Management System</h3>
+                        <p data-t="proj1_desc">A comprehensive system for managing hospital operations, appointments, and patient records.</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="20240803_112007 (1).jpg" alt="Work Photo 1" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <h3 data-t="proj2_title">Fitness Tracker App</h3>
+                        <p data-t="proj2_desc">Modern Android application to track workouts, diet, and progress with real-time sync.</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="20240803_120645.jpg" alt="Work Photo 2" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                        <h3 data-t="proj3_title">E-commerce Platform</h3>
+                        <p data-t="proj3_desc">High-performance online store with integrated payment gateways and admin dashboard.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title" data-t="contact_title">Get In Touch</h2>
+                <div class="underline"></div>
+            </div>
+            <!-- Simple contact form concept -->
+             <div style="max-width: 600px; margin: 0 auto;" class="reveal">
+                <form id="contact-form">
+                    <div style="display: grid; gap: 1rem;">
+                        <input type="text" data-t="contact_name" placeholder="Name" class="control-btn" style="width: 100%; text-align: left; padding-left: 1rem; height: 50px;">
+                        <input type="email" data-t="contact_email" placeholder="Email" class="control-btn" style="width: 100%; text-align: left; padding-left: 1rem; height: 50px;">
+                        <textarea data-t="contact_msg" placeholder="Message" class="control-btn" style="width: 100%; text-align: left; padding-left: 1rem; height: 150px; padding-top: 1rem;"></textarea>
+                        <button type="submit" class="btn btn-primary" data-t="contact_send" style="justify-content: center;">Send Message</button>
+                    </div>
+                </form>
+             </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer style="padding: 4rem 0; text-align: center; border-top: 1px solid var(--border);">
+        <div class="container">
+            <p data-t="footer_copy">© 2024 Duc Hm. All rights reserved.</p>
+        </div>
+    </footer>
 
-
-    <div class="last-text">
-        <p>© 2024 by Duc Hm</p>
-    </div>
-
-    <!-- <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a> -->
-
-    <script src="sript.js"></script>
-
+    <script type="module" src="scripts/main.js"></script>
 </body>
-
 </html>
