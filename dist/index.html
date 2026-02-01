@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duc Hm | Professional Software Engineer Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <script type="module" crossorigin src="/assets/index-DiOOM8O_.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-ICPJMSNl.css">
+  <script type="module" crossorigin src="/assets/index-DocmNz74.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BM1qmjzt.css">
 </head>
 <body>
     <!-- Animated Background Blobs -->
@@ -24,6 +24,7 @@
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link active" data-t="nav_home">Home</a></li>
                 <li><a href="#about" class="nav-link" data-t="nav_about">About</a></li>
+                <li><a href="#experience" class="nav-link" data-t="nav_experience">Experience</a></li>
                 <li><a href="#projects" class="nav-link" data-t="nav_projects">Projects</a></li>
                 <li><a href="#services" class="nav-link" data-t="nav_services">Services</a></li>
                 <li><a href="#contact" class="nav-link" data-t="nav_contact">Contact</a></li>
@@ -59,10 +60,10 @@
                     <a href="#projects" class="btn glass-card" data-t="hero_cta_work" style="border: 1px solid var(--border)">View My Projects</a>
                 </div>
                 <div class="social-links">
-                    <a href="#" class="social-link"><i class='bx bxl-github'></i></a>
+                    <a href="https://github.com/hominhduc18" class="social-link"><i class='bx bxl-github'></i></a>
                     <a href="#" class="social-link"><i class='bx bxl-linkedin'></i></a>
                     <a href="#" class="social-link"><i class='bx bxl-facebook'></i></a>
-                    <a href="mailto:duc@example.com" class="social-link"><i class='bx bx-envelope'></i></a>
+                    <a href="mailto:hoduc092@gmail.com" class="social-link"><i class='bx bx-envelope'></i></a>
                 </div>
             </div>
             <div class="hero-visual reveal">
@@ -89,11 +90,6 @@
                         <p data-t="about_p1">I am a Software Development Engineer based in Ho Chi Minh City...</p>
                         <br>
                         <p data-t="about_p2">My core expertise lies in building robust backend architectures...</p>
-                        <div style="margin-top: 2rem;">
-                            <a href="#" class="btn btn-primary" style="padding: 0.6rem 1.5rem;">
-                                <i class='bx bx-download'></i> <span data-t="profile_cv">Download CV</span>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -120,6 +116,49 @@
         </div>
     </section>
 
+    <!-- Work Experience -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title" data-t="exp_title">Work Experience</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="timeline">
+                <!-- Job 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date" data-t="exp_role1_d">2023 - Present</div>
+                    <div class="glass-card timeline-content">
+                        <h3 data-t="exp_role1_t">Backend Software Engineer</h3>
+                        <h4 class="company" data-t="exp_role1_c"></h4>
+                        <ul class="exp-list">
+                            <li data-t="exp_role1_l1">Architected microservices with .NET Core & RabbitMQ.</li>
+                            <li data-t="exp_role1_l2">Optimized SQL queries, reducing load time by 40%.</li>
+                            <li data-t="exp_role1_l3">Mentored 3 junior developers in Clean Code practices.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date" data-t="exp_role2_d">2021 - 2023</div>
+                    <div class="glass-card timeline-content">
+                        <h3 data-t="exp_role2_t">Web Developer</h3>
+                        <h4 class="company" data-t="exp_role2_c"></h4>
+                        <ul class="exp-list">
+                            <li data-t="exp_role2_l1">Developed RESTful APIs for e-commerce platforms.</li>
+                            <li data-t="exp_role2_l2">Integrated digital payment gateways (Momo, VNPay).</li>
+                            <li data-t="exp_role2_l3">Managed AWS EC2 & S3 for production deployments.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Skills Section -->
     <section class="skills" id="skills">
         <div class="container">
@@ -127,27 +166,69 @@
                 <h2 class="section-title" data-t="nav_skills">Technical Skills</h2>
                 <div class="underline"></div>
             </div>
-            <div class="skills-grid">
-                <div class="skill-item glass-card reveal">
-                    <i class='bx bx-code-alt'></i>
-                    <h3>Frontend</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted);">HTML, CSS, JS, React, Next.js</p>
+            <div class="skills-layout">
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skill-item glass-card reveal">
+                        <div class="skill-header">
+                            <i class='bx bx-code-alt' style="color: #6366f1;"></i>
+                            <h3 data-t="skills_lang">Languages</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag strong">C#</span>
+                            <span class="tag strong">Javascript</span>
+                            <span class="tag inter">Dart</span>
+                            <span class="tag inter">Kotlin</span>
+                        </div>
+                    </div>
+                    <!-- Frameworks -->
+                    <div class="skill-item glass-card reveal">
+                        <div class="skill-header">
+                            <i class='bx bx-layer' style="color: #ec4899;"></i>
+                            <h3 data-t="skills_framework">Frameworks</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag strong">ASP.NET Core</span>
+                            <span class="tag strong">Vue.js</span>
+                            <span class="tag strong">Flutter</span>
+                        </div>
+                    </div>
+                    <!-- Databases -->
+                    <div class="skill-item glass-card reveal">
+                        <div class="skill-header">
+                            <i class='bx bx-data' style="color: #22c55e;"></i>
+                            <h3 data-t="skills_db">Databases</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag strong">MySQL</span>
+                            <span class="tag inter">PostgreSQL</span>
+                            <span class="tag inter">MongoDB</span>
+                        </div>
+                    </div>
+                    <!-- Tools -->
+                    <div class="skill-item glass-card reveal">
+                        <div class="skill-header">
+                            <i class='bx bx-cog' style="color: #f59e0b;"></i>
+                            <h3 data-t="skills_devops">Tools & DevOps</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="tag strong">Git</span>
+                            <span class="tag strong">Docker</span>
+                            <span class="tag inter">REST API</span>
+                            <span class="tag inter">CI/CD</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-item glass-card reveal">
-                    <i class='bx bx-server'></i>
-                    <h3>Backend</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted);">.NET Core, Node.js, REST API</p>
+                <div class="skills-illustration reveal">
+                    <img src="/assets/skills_illustration-wdXeYs1t.png" alt="Tech Stack Illustration">
                 </div>
-                <div class="skill-item glass-card reveal">
-                    <i class='bx bx-data'></i>
-                    <h3>Database</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted);">SQL Server, MongoDB, PostgreSQL</p>
-                </div>
-                <div class="skill-item glass-card reveal">
-                    <i class='bx bx-cloud'></i>
-                    <h3>DevOps</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted);">Docker, Git, CI/CD, AWS</p>
-                </div>
+            </div>
+            
+            <!-- Skill Level Legend -->
+            <div class="skills-legend reveal">
+                <span class="legend-item"><span class="dot strong"></span> <span data-t="level_strong">Strong</span></span>
+                <span class="legend-item"><span class="dot inter"></span> <span data-t="level_inter">Intermediate</span></span>
+                <span class="legend-item"><span class="dot basic"></span> <span data-t="level_basic">Basic</span></span>
             </div>
         </div>
     </section>
@@ -193,35 +274,79 @@
     <section class="projects" id="projects">
         <div class="container">
             <div class="section-header reveal">
-                <h2 class="section-title" data-t="nav_projects">Featured Projects</h2>
+                <h2 class="section-title" data-t="nav_projects">Industry Experience</h2>
                 <div class="underline"></div>
             </div>
             <div class="projects-grid">
-                <!-- Project 1 -->
+                <!-- Project 1: Medical -->
                 <div class="project-card glass-card reveal">
-                    <div class="project-img">
-                        <img src="/assets/proj_hospital-CvwYIePZ.png" alt="Hospital App" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+                    <div class="project-icon-box">
+                        <i class='bx bxs-plus-medical'></i>
                     </div>
                     <div class="project-content">
-                        <h3 data-t="proj1_title">Hospital Management Pro</h3>
+                        <h3 data-t="proj1_title">Medical Systems</h3>
                         <div class="project-details">
-                            <div class="detail-item"><span class="detail-label" data-t="proj_problem">Problem:</span> <span data-t="proj1_problem">Paper-based records...</span></div>
-                            <div class="detail-item"><span class="detail-label" data-t="proj_solution">Solution:</span> <span data-t="proj1_solution">.NET Core system...</span></div>
-                            <div class="detail-item"><span class="detail-label" data-t="proj_result">Results:</span> <span data-t="proj1_result">Reduced wait time...</span></div>
+                            <div class="detail-item"><span class="detail-label" data-t="proj_problem">Challenge:</span> <span data-t="proj1_problem">High-load management...</span></div>
+                            <div class="detail-item"><span class="detail-label" data-t="proj_solution">Expertise:</span> <span data-t="proj1_solution">.NET Core, Microservices...</span></div>
+                            <div class="detail-tag" data-t="proj1_result">Healthcare & MedTech</div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/hominhduc18" class="link-icon"><i class='bx bxl-github'></i></a>
+                            <a href="#" class="link-icon"><i class='bx bx-link-external'></i></a>
                         </div>
                     </div>
                 </div>
-                <!-- Project 2 -->
+                <!-- Project 2: Securities -->
                 <div class="project-card glass-card reveal">
-                    <div class="project-img">
-                        <img src="/assets/proj_fitness-CYT3ccRA.png" alt="Fitness App" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+                    <div class="project-icon-box" style="background: rgba(34, 197, 94, 0.1); color: #22c55e;">
+                        <i class='bx bxs-chart'></i>
                     </div>
                     <div class="project-content">
-                        <h3 data-t="proj2_title">Fitness Cloud App</h3>
+                        <h3 data-t="proj2_title">Securities & Finance</h3>
                         <div class="project-details">
-                            <div class="detail-item"><span class="detail-label" data-t="proj_problem">Problem:</span> <span data-t="proj2_problem">Remote tracking...</span></div>
-                            <div class="detail-item"><span class="detail-label" data-t="proj_solution">Solution:</span> <span data-t="proj2_solution">Kotlin & Firebase...</span></div>
-                            <div class="detail-item"><span class="detail-label" data-t="proj_result">Results:</span> <span data-t="proj2_result">10k users...</span></div>
+                            <div class="detail-item"><span class="detail-label" data-t="proj_problem">Challenge:</span> <span data-t="proj2_problem">Real-time trading...</span></div>
+                            <div class="detail-item"><span class="detail-label" data-t="proj_solution">Expertise:</span> <span data-t="proj2_solution">High-concurrency APIs...</span></div>
+                            <div class="detail-tag" data-t="proj2_result">FinTech & Securities</div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/hominhduc18" class="link-icon"><i class='bx bxl-github'></i></a>
+                            <a href="#" class="link-icon"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3: Insurance -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-icon-box" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b;">
+                        <i class='bx bxs-shield-alt'></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-t="proj3_title">Insurance Management</h3>
+                        <div class="project-details">
+                            <div class="detail-item"><span class="detail-label" data-t="proj_problem">Challenge:</span> <span data-t="proj3_problem">Complex claim processing...</span></div>
+                            <div class="detail-item"><span class="detail-label" data-t="proj_solution">Expertise:</span> <span data-t="proj3_solution">Clean Architecture...</span></div>
+                            <div class="detail-tag" data-t="proj3_result">InsurTech</div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/hominhduc18" class="link-icon"><i class='bx bxl-github'></i></a>
+                            <a href="#" class="link-icon"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4: Manufacturing -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-icon-box" style="background: rgba(168, 85, 247, 0.1); color: #a855f7;">
+                        <i class='bx bxs-factory'></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-t="proj4_title">Manufacturing (ERP)</h3>
+                        <div class="project-details">
+                            <div class="detail-item"><span class="detail-label" data-t="proj_problem">Challenge:</span> <span data-t="proj4_problem">Supply chain tracking...</span></div>
+                            <div class="detail-item"><span class="detail-label" data-t="proj_solution">Expertise:</span> <span data-t="proj4_solution">Inventory Logic...</span></div>
+                            <div class="detail-tag" data-t="proj4_result">Industrial & Manufacturing</div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/hominhduc18" class="link-icon"><i class='bx bxl-github'></i></a>
+                            <a href="#" class="link-icon"><i class='bx bx-link-external'></i></a>
                         </div>
                     </div>
                 </div>
@@ -235,9 +360,6 @@
             <div class="section-header reveal">
                 <h2 class="section-title" data-t="services_title">Services I Offer</h2>
                 <div class="underline"></div>
-            </div>
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <div class="services-tip reveal" data-t="service_budget">Budget-friendly solutions...</div>
             </div>
             <div class="services-grid">
                 <div class="service-card glass-card reveal">
@@ -268,6 +390,33 @@
             </div>
         </div>
     </section>
+    
+    <!-- Soft Skills -->
+    <section class="soft-skills" id="values">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title" data-t="soft_title">Core Values</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="soft-skills-grid">
+                <div class="glass-card reveal soft-card">
+                    <i class='bx bx-message-square-detail' style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1.5rem;"></i>
+                    <h3 data-t="soft1_t">Technical Communication</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 1rem;" data-t="soft1_d">Experienced in writing documentation...</p>
+                </div>
+                <div class="glass-card reveal soft-card">
+                    <i class='bx bx-brain' style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 1.5rem;"></i>
+                    <h3 data-t="soft2_t">Problem Solving</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 1rem;" data-t="soft2_d">Analytical mindset...</p>
+                </div>
+                <div class="glass-card reveal soft-card">
+                    <i class='bx bx-rocket' style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1.5rem;"></i>
+                    <h3 data-t="soft3_t">Continuous Learning</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 1rem;" data-t="soft3_d">Quickly adapting...</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
@@ -288,8 +437,8 @@
                     </div>
                 </form>
                 <div class="contact-links">
-                    <div class="contact-link-item"><i class='bx bxl-whatsapp'></i> <span>0123 456 789</span></div>
-                    <div class="contact-link-item"><i class='bx bx-envelope'></i> <span>duc.hm@gmail.com</span></div>
+                    <div class="contact-link-item"><i class='bx bxl-whatsapp'></i> <span>0375586632</span></div>
+                    <div class="contact-link-item"><i class='bx bx-envelope'></i> <span>hoduc092@gmail.com</span></div>
                     <div class="contact-link-item"><i class='bx bxl-linkedin-square'></i> <span>LinkedIn</span></div>
                 </div>
             </div>
@@ -300,7 +449,7 @@
     <footer style="padding: 4rem 0; text-align: center; border-top: 1px solid var(--border); margin-top: 4rem;">
         <div class="container">
             <div class="social-links" style="justify-content: center; margin-bottom: 2rem;">
-                <a href="#" class="social-link"><i class='bx bxl-github'></i></a>
+                <a href="https://github.com/hominhduc18" class="social-link"><i class='bx bxl-github'></i></a>
                 <a href="#" class="social-link"><i class='bx bxl-linkedin'></i></a>
                 <a href="#" class="social-link"><i class='bx bxl-facebook'></i></a>
             </div>
