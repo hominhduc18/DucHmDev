@@ -5,8 +5,8 @@ const translations = {
         nav_about: "About",
         nav_skills: "Skills",
         nav_projects: "Projects",
-        nav_experience: "Experience",
-        nav_services: "Services",
+        nav_solutions: "Solutions",
+        nav_services: "Expertise",
         nav_contact: "Contact",
 
         // Profile
@@ -16,7 +16,7 @@ const translations = {
         profile_phone: "0375586632",
 
         // Hero
-        hero_tag: "3 Years Experience",
+        hero_tag: "Software Development Engineer",
         hero_title: "Crafting <span>Scalable Solutions</span> with Technical Precision",
         hero_desc: "I specialize in building robust backend architectures and high-performance web systems. Focused on clean code, system scalability, and solving complex business logic.",
         hero_cta_hire: "Get in Touch",
@@ -67,46 +67,32 @@ const translations = {
         service5_t: "Legacy Migration",
         service5_d: "Modernizing old systems to modern tech stacks.",
 
-        // Projects
-        proj_problem: "Challenge:",
-        proj_solution: "Expertise:",
-        proj_result: "Domain:",
-        
         proj1_title: "Medical Systems",
-        proj1_problem: "High-load management for hospital records and scheduling.",
-        proj1_solution: ".NET Core, Microservices, SQL Optimization.",
         proj1_result: "Healthcare & MedTech",
         
         proj2_title: "Securities & Finance",
-        proj2_problem: "Real-time trading data processing and secure transactions.",
-        proj2_solution: "High-concurrency APIs, WebSocket, Encryption.",
         proj2_result: "FinTech & Securities",
 
         proj3_title: "Insurance Management",
-        proj3_problem: "Complex claim processing and customer policy management.",
-        proj3_solution: "Clean Architecture, Automated Workflows.",
         proj3_result: "InsurTech",
 
         proj4_title: "Manufacturing (ERP)",
-        proj4_problem: "Supply chain tracking and production resource planning.",
-        proj4_solution: "Inventory Logic, Data Analytics, Dashboarding.",
         proj4_result: "Industrial & Manufacturing",
 
-        // Experience
-        exp_title: "Work Experience",
-        exp_role1_t: "Backend Software Engineer",
-        exp_role1_c: "",
-        exp_role1_d: "2023 - Present (2 Years)",
-        exp_role1_l1: "Architected scalable microservices with .NET Core & Clean Architecture.",
-        exp_role1_l2: "Optimized complex SQL queries & implemented Redis caching for high traffic.",
-        exp_role1_l3: "Integrated RabbitMQ for asynchronous processing between services.",
-
-        exp_role2_t: "Mobile App Developer",
-        exp_role2_c: "",
-        exp_role2_d: "2021 - 2022 (1 Year)",
-        exp_role2_l1: "Built cross-platform mobile applications using Flutter & Firebase.",
-        exp_role2_l2: "Implemented real-time features and offline data synchronization.",
-        exp_role2_l3: "Managed app publishing process on Google Play & App Store.",
+        // Experience (Now Solutions)
+        solutions_title: "What I Can Do For You",
+        solution1_t: "Corporate Website",
+        solution1_d: "High-performance, modern, and SEO-optimized websites for brands.",
+        solution2_t: "Landing Page",
+        solution2_d: "Focused on high conversion rates with professional UI/UX design.",
+        solution3_t: "Mobile App Development",
+        solution3_d: "Build fast and feature-rich iOS & Android apps using Flutter.",
+        solution4_t: "Management Systems",
+        solution4_d: "Custom ERP, CRM, and internal workflows for your business.",
+        solution5_t: "System Optimization",
+        solution5_d: "Performance tuning and security hardening for high-traffic apps.",
+        solution6_t: "API & Integrations",
+        solution6_d: "Seamlessly connecting payments, logistics, and 3rd party services.",
 
         // Skill Categories
         skills_lang: "Languages",
@@ -133,6 +119,8 @@ const translations = {
         contact_email: "Your Email",
         contact_msg: "Describe your project",
         contact_send: "Send Inquiry",
+        contact_zalo: "Contact via Zalo",
+        contact_email_label: "Send an Email",
 
         footer_text: "Engineered with Precision. © 2024 Duc Hm."
     },
@@ -141,8 +129,8 @@ const translations = {
         nav_home: "Trang chủ",
         nav_about: "Hồ sơ",
         nav_skills: "Kỹ năng",
-        nav_projects: "Dự án",
-        nav_experience: "Kinh nghiệm",
+        nav_projects: "Kinh nghiệm",
+        nav_solutions: "Dịch vụ",
         nav_services: "Chuyên môn",
         nav_contact: "Liên hệ",
 
@@ -187,21 +175,20 @@ const translations = {
         soft3_t: "Tự học & Thích nghi",
         soft3_d: "Khả năng nắm bắt công nghệ mới và các best practices nhanh chóng.",
 
-        // Experience
-        exp_title: "Kinh nghiệm làm việc",
-        exp_role1_t: "Kỹ sư Backend",
-        exp_role1_c: "",
-        exp_role1_d: "2023 - Hiện tại (2 Năm)",
-        exp_role1_l1: "Thiết kế kiến trúc microservices với .NET Core & Clean Architecture.",
-        exp_role1_l2: "Tối ưu hóa các truy vấn SQL phức tạp và triển khai caching với Redis.",
-        exp_role1_l3: "Sử dụng RabbitMQ để xử lý các tác vụ bất đồng bộ giữa các dịch vụ.",
-
-        exp_role2_t: "Lập trình viên Mobile",
-        exp_role2_c: "",
-        exp_role2_d: "2021 - 2022 (1 Năm)",
-        exp_role2_l1: "Xây dựng ứng dụng di động đa nền tảng bằng Flutter & Firebase.",
-        exp_role2_l2: "Triển khai tính năng thời gian thực và đồng bộ dữ liệu ngoại tuyến.",
-        exp_role2_l3: "Quản lý quy trình đưa ứng dụng lên Google Play & App Store.",
+        // Experience (Now Solutions)
+        solutions_title: "Dịch vụ Freelance của tôi",
+        solution1_t: "Thiết kế Website Doanh nghiệp",
+        solution1_d: "Xây dựng website chuyên nghiệp, chuẩn SEO, tối ưu tốc độ và nhận diện thương hiệu.",
+        solution2_t: "Landing Page Chuyển đổi",
+        solution2_d: "Giao diện bắt mắt, tập trung tối đa vào việc thu hút khách hàng và tỷ lệ chốt đơn.",
+        solution3_t: "Ứng dụng Di động (App)",
+        solution3_d: "Phát triển app đa nền tảng (iOS/Android) mượt mà, tích hợp nhiều tính năng hiện đại.",
+        solution4_t: "Hệ thống Quản lý (Web App)",
+        solution4_d: "Xây dựng ERP, CRM, phần mềm quản lý nội bộ giải quyết nỗi đau của doanh nghiệp.",
+        solution5_t: "Tối ưu & Bảo mật",
+        solution5_d: "Nâng cấp tốc độ, tối ưu database và thắt chặt bảo mật cho hệ thống.",
+        solution6_t: "Tích hợp & Tự động hóa",
+        solution6_d: "Kết nối cổng thanh toán, đơn vị vận chuyển và các API bên thứ ba.",
 
         // Workflow
         flow_title: "Quy trình phát triển",
@@ -239,29 +226,16 @@ const translations = {
         service5_t: "Hiện đại hóa hệ thống",
         service5_d: "Chuyển đổi hệ thống cũ sang các công nghệ hiện đại.",
 
-        // Projects
-        proj_problem: "Thử thách:",
-        proj_solution: "Chuyên môn:",
-        proj_result: "Lĩnh vực:",
-        
         proj1_title: "Hệ thống Y tế",
-        proj1_problem: "Quản lý dữ liệu bệnh viện khối lượng lớn và điều phối lịch hẹn.",
-        proj1_solution: ".NET Core, Microservices, Tối ưu SQL.",
         proj1_result: "Healthcare & MedTech",
         
         proj2_title: "Chứng khoán & Tài chính",
-        proj2_problem: "Xử lý dữ liệu giao dịch thời gian thực và bảo mật thanh toán.",
-        proj2_solution: "High-concurrency API, WebSocket, Mã hóa dữ liệu.",
         proj2_result: "FinTech & Securities",
 
         proj3_title: "Quản lý Bảo hiểm",
-        proj3_problem: "Xử lý bồi thường phức tạp và quản lý hợp đồng khách hàng.",
-        proj3_solution: "Clean Architecture, Quy trình tự động hóa.",
         proj3_result: "InsurTech",
 
         proj4_title: "Quản lý Sản xuất (ERP)",
-        proj4_problem: "Theo dõi chuỗi cung ứng và lập kế hoạch nguồn lực sản xuất.",
-        proj4_solution: "Logic kho bãi, Phân tích dữ liệu, Dashboard.",
         proj4_result: "Industrial & Manufacturing",
 
         // Contact
@@ -270,6 +244,8 @@ const translations = {
         contact_email: "Email liên hệ",
         contact_msg: "Mô tả dự án hoặc mục đích",
         contact_send: "Gửi yêu cầu",
+        contact_zalo: "Liên hệ qua Zalo",
+        contact_email_label: "Gửi Email trực tiếp",
 
         footer_text: "Engineered with Precision. © 2024 Đức Hm."
     }
