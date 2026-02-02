@@ -58,7 +58,7 @@ npm run build
 
 - **Zalo**: 0375586632
 - **Email**: hoduc092@gmail.com
-- **Website**: [Your Vercel/Domain Link Here]
+- **Website**: [Domain Link Here]
 
 ---
 
