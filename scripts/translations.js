@@ -68,15 +68,19 @@ const translations = {
         service5_d: "Modernizing old systems to modern tech stacks.",
 
         proj1_title: "Medical Systems",
+        proj1_desc: "Modern hospital management systems with electronic health records.",
         proj1_result: "Healthcare & MedTech",
         
         proj2_title: "Securities & Finance",
+        proj2_desc: "Real-time trading platforms and secure payment gateways.",
         proj2_result: "FinTech & Securities",
 
         proj3_title: "Insurance Management",
+        proj3_desc: "Automated claim processing and customer policy management tools.",
         proj3_result: "InsurTech",
 
         proj4_title: "Manufacturing (ERP)",
+        proj4_desc: "Inventory tracking and production resource planning systems.",
         proj4_result: "Industrial & Manufacturing",
 
         // Experience (Now Solutions)
@@ -121,8 +125,9 @@ const translations = {
         contact_send: "Send Inquiry",
         contact_zalo: "Contact via Zalo",
         contact_email_label: "Send an Email",
+        contact_success: "Message sent! I will contact you soon.",
 
-        footer_text: "Engineered with Precision. © 2024 Duc Hm."
+        footer_text: "© By Duc Hm."
     },
     vi: {
         // Nav
@@ -227,15 +232,19 @@ const translations = {
         service5_d: "Chuyển đổi hệ thống cũ sang các công nghệ hiện đại.",
 
         proj1_title: "Hệ thống Y tế",
+        proj1_desc: "Số hóa quy trình quản lý bệnh viện và bệnh án điện tử.",
         proj1_result: "Healthcare & MedTech",
         
         proj2_title: "Chứng khoán & Tài chính",
+        proj2_desc: "Sàn giao dịch thời gian thực và cổng thanh toán bảo mật.",
         proj2_result: "FinTech & Securities",
 
         proj3_title: "Quản lý Bảo hiểm",
+        proj3_desc: "Tự động hóa bồi thường và quản lý hợp đồng khách hàng.",
         proj3_result: "InsurTech",
 
         proj4_title: "Quản lý Sản xuất (ERP)",
+        proj4_desc: "Hệ thống quản trị kho bãi và kế hoạch nguồn lực sản xuất.",
         proj4_result: "Industrial & Manufacturing",
 
         // Contact
@@ -246,6 +255,7 @@ const translations = {
         contact_send: "Gửi yêu cầu",
         contact_zalo: "Liên hệ qua Zalo",
         contact_email_label: "Gửi Email trực tiếp",
+        contact_success: "Đã gửi tin nhắn! Tôi sẽ liên hệ lại sớm.",
 
         footer_text: "Engineered with Precision. © 2024 Đức Hm."
     }

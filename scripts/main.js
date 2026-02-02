@@ -34,12 +34,14 @@ class Portfolio {
             langBtn.addEventListener('click', () => this.toggleLanguage());
         }
 
-        // Mobile Menu
-        const menuBtn = document.getElementById('menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-        if (menuBtn) {
-            menuBtn.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
+        // Contact Form
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const trans = translations[this.lang];
+                alert(trans.contact_success || 'Message sent!');
+                contactForm.reset();
             });
         }
     }
